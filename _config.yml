@@ -3,9 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+first_name: Chenxin
+middle_name: 
+last_name: DIAO
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -16,7 +16,7 @@ footer_text: >
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🪩 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://cxdiao.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -32,7 +32,7 @@ back_to_top: true # set to false to disable the back to top button
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed # https://github.com/ryo-ma/github-profile-trophy
 
@@ -123,8 +123,8 @@ disqus_shortname: al-folio # put your disqus shortname
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+  # - name: medium.com
+  #   rss_url: https://medium.com/@al-folio/feed
   - name: Google Blog
     posts:
       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
@@ -188,6 +188,14 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/blog.md
+  - _pages/repositories.md
+  - _pages/cv.md
+  - _pages/teaching.md
+  - _pages/profiles.md
+  - _pages/books.md
+  - _pages/dropdown.md
+  - _projects/?_project.md
   - purgecss.config.js
   - README.md
   - readme_preview/
