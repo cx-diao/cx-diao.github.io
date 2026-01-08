@@ -1,3 +1,26 @@
 "ACL Findings":
   color: "#ff7979"
   url: https://aclanthology.org/
+
+"AACL":
+  color: "#fb79ff"
+  url: https://aclanthology.org/venues/aacl/
+
+"Preprint":
+  color: "#5e5e5e"
+  url: https://arxiv.org/
+
+"EMNLP":
+  color: "#3f20bd"
+  url: https://aclanthology.org/venues/emnlp/
+
+"ACL":
+  color: "#bd2020"
+  url: https://aclanthology.org/venues/acl/
+
+"Workshop":
+  color: "#467d3b"
+
+"ICLR":
+  color: "#7a511b"
+  url: https://iclr.cc/

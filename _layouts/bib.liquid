@@ -238,7 +238,25 @@
         {% endif %}
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        {% if entry.code contains '://' %}
+          <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        {% else %}
+          <a href="{{ entry.code | prepend: '/assets/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.dataset %}
+        {% if entry.dataset contains '://' %}
+          <a href="{{ entry.dataset }}" class="btn btn-sm z-depth-0" role="button">Dataset</a>
+        {% else %}
+          <a href="{{ entry.dataset | prepend: '/assets/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Dataset</a>
+        {% endif %}
+      {% endif %}
+      {% if entry.demo %}
+        {% if entry.demo contains '://' %}
+          <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">Demo</a>
+        {% else %}
+          <a href="{{ entry.demo | prepend: '/assets/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Demo</a>
+        {% endif %}
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
@@ -256,6 +274,22 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if entry.openreview_id %}
+        <a href="https://openreview.net/forum?id={{ entry.openreview_id }}" class="btn btn-sm z-depth-0" role="button">OpenReview</a>
+      {% endif %}
+      {% if entry.google_scholar_id_no_citation %}
+        <a
+          href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.data.socials.scholar_userid }}&citation_for_view={{ site.data.socials.scholar_userid }}:{{ entry.google_scholar_id_no_citation }}"
+          aria-label="Google Scholar link"
+          style="border: none; padding: 0; display: inline-block;"
+        >
+          <img
+            src="https://img.shields.io/badge/scholar-4285F4?logo=googlescholar&labelColor=beige"
+            alt="Google Scholar"
+            style="height: 20px; vertical-align: middle; border: none;"
+          >
+        </a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
