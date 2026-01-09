@@ -23,8 +23,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a full-time PhD student at the University of Edinburgh, supervised by [Emily Allaway](https://emilyallaway.github.io/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Broadly, I study trustworthy NLP with an emphasis on sound reasoning over evidence. I develop frameworks that assess not only whether a statement is factually correct, but also whether the interpretations and arguments drawn from retrieved information are logically and evidentially justified. At present, I focus on over-generalisation in scientific writing, examining how claims become broader than the evidence supports.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I also maintain regular external research connections, including with [Huawei Edinburgh Research Centre](https://blogs.ed.ac.uk/he-lab/) and [CoCoA Lab](https://cocoa-flint.umich.edu/home) led by my former supervisor, [Steve Wilson](https://www.steverw.com/). Before joining the University, I worked in industry on problems related to semantic parsing and agentic retrieval.
