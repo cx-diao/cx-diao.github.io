@@ -380,8 +380,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-joined-the-ilcc-at-the-university-of-edinburgh-as-a-full-time-phd-student-supervised-by-dr-emily-allaway",
-          title: 'I joined the ILCC at the University of Edinburgh as a full-time PhD...',
+            },},{id: "news-i-joined-ilcc-at-the-university-of-edinburgh-as-a-full-time-phd-student-supervised-by-emily-allaway",
+          title: 'I joined ILCC at the University of Edinburgh as a full-time PhD student,...',
           description: "",
           section: "News",},{
         id: 'social-dblp',
