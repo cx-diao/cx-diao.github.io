@@ -946,6 +946,13 @@ html.transition *:after {
       }
     }
   }
+
+  // Constrain text width when profile image is present
+  @media (min-width: 576px) {
+    article .clearfix {
+      max-width: 65%;
+    }
+  }
 }
 
 progress {
