@@ -25,6 +25,6 @@ latest_posts:
 
 I am a full-time PhD student at the University of Edinburgh, supervised by [Emily Allaway](https://emilyallaway.github.io/).
 
-Broadly, I study trustworthy NLP with an emphasis on sound reasoning over evidence. I develop frameworks that assess not only whether a statement is factually correct, but also whether the interpretations and arguments drawn from retrieved information are logically and evidentially justified. At present, I focus on over-generalisation in scientific writing, examining how claims become broader than the evidence supports.
+Broadly, I study explainable NLP with an emphasis on sound reasoning over evidence. I develop frameworks that assess not only whether a statement is factually correct, but also whether the interpretations and arguments drawn from retrieved information are logically and evidentially justified. At present, I focus on over-generalisation in scientific writing, examining how claims become broader than the evidence supports.
 
 I also maintain regular external research connections, including with [Huawei Edinburgh Research Centre](https://blogs.ed.ac.uk/he-lab/) and [CoCoA Lab](https://cocoa-flint.umich.edu/home) led by my former supervisor, [Steve Wilson](https://www.steverw.com/). Before joining the University, I worked in industry on problems related to semantic parsing and agentic retrieval.
