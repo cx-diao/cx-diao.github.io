@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Chenxin $\in$ <a href='#'>MLE Lab</a> $\subset$ <a href='https://edinburghnlp.inf.ed.ac.uk'>EdinburghNLP</a> $\subset$ <a href='https://informatics.ed.ac.uk/ilcc'>ILCC</a> $\subset$ <a href='https://www.ed.ac.uk/'>University of Edinburgh</a>
+subtitle: Chenxin $\in$ <a href='https://emilyallaway.github.io/mlegroup.html'>MLE Lab</a> $\subset$ <a href='https://edinburghnlp.inf.ed.ac.uk'>EdinburghNLP</a> $\subset$ <a href='https://informatics.ed.ac.uk/ilcc'>ILCC</a> $\subset$ <a href='https://www.ed.ac.uk/'>University of Edinburgh</a>
 
 profile:
   align: right
