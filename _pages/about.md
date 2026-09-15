@@ -23,7 +23,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a full-time PhD student at the University of Edinburgh, supervised by [Emily Allaway](https://emilyallaway.github.io/).
+I am a PhD student at the University of Edinburgh, supervised by [Emily Allaway](https://emilyallaway.github.io/).
 
 I am on a quest to understand when and why I can trust the words I read (whether written by humans or LLMs). This drives my work on modelling soundness: asking both whether a statement is correct and whether the interpretations are justified. Drawing on logic and linguistics, I develop neuro-symbolic methods to investigate these questions at scale. My current focus is over-generalisation in scientific writing, examining how claims become broader than the evidence supports.
 
