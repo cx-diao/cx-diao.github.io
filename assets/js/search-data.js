@@ -23,15 +23,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-joined-ilcc-at-the-university-of-edinburgh-as-a-full-time-phd-student-supervised-by-emily-allaway",
+        },{id: "news-i-joined-ilcc-at-the-university-of-edinburgh-as-a-full-time-phd-student-supervised-by-emily-allaway",
           title: 'I joined ILCC at the University of Edinburgh as a full-time PhD student,...',
           description: "",
-          section: "News",},{id: "news-how-broad-is-that-claim-mapping-generalisation-in-nlp-research-by-chenxin-diao-nataliya-stepanova-emily-allaway-will-appear-at-emnlp-2026-harmreduction-benchmarking-llms-in-harm-reduction-information-provision-to-support-people-who-use-drugs-by-kaixuan-wang-chenxin-diao-jason-t-jacques-zhongliang-guo-shuai-zhao-will-appear-at-emnlp-2026",
+          section: "News",},{id: "news-how-broad-is-that-claim-mapping-generalisation-in-nlp-research-by-chenxin-diao-nataliya-stepanova-emily-allaway-will-appear-at-emnlp-2026-oral-harmreduction-benchmarking-llms-in-harm-reduction-information-provision-to-support-people-who-use-drugs-by-kaixuan-wang-chenxin-diao-jason-t-jacques-zhongliang-guo-shuai-zhao-will-appear-at-emnlp-2026-poster",
           title: 'How broad is that claim? Mapping Generalisation in NLP Research by Chenxin Diao,...',
           description: "",
           section: "News",},{
