@@ -742,7 +742,18 @@ footer.sticky-bottom {
     li {
       margin-bottom: 1rem;
 
-      .preview {}
+      // Crop thumbnails to a uniform box at display time; source files are untouched
+      .preview {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
+
+        // Show the full, uncropped image when zoomed
+        &.medium-zoom-image--opened {
+          object-fit: contain;
+        }
+      }
 
       .abbr {
         margin-bottom: 0.5rem;
