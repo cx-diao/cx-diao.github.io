@@ -748,15 +748,15 @@ footer.sticky-bottom {
         aspect-ratio: 4 / 3;
         object-fit: cover;
         object-position: center;
-
-        // Show the full, uncropped image when zoomed
-        &.medium-zoom-image--opened {
-          object-fit: contain;
-        }
       }
 
       .abbr {
         margin-bottom: 0.5rem;
+
+        // On phones the column stacks full width; cap it so the badge and preview stay small
+        @media (max-width: 575.98px) {
+          max-width: 200px;
+        }
 
         abbr {
           display: inline-block;
@@ -1170,6 +1170,12 @@ nav[data-toggle="toc"] {
 .medium-zoom-overlay,
 .medium-zoom-image--opened {
   z-index: 999;
+}
+
+// medium-zoom shows a clone of the image appended to <body>, so this can't be
+// nested under .publications; show the full, uncropped publication preview
+img.preview.medium-zoom-image--opened {
+  object-fit: contain;
 }
 
 #toc-sidebar {
