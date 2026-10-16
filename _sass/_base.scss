@@ -811,23 +811,91 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
-          margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 0.4rem;
 
+        // Badges modelled on the shields.io Google Scholar badge: a beige icon section and a coloured label section.
+        // --badge-color sets both the label background and the icon (per-kind colours below).
+        a.pub-badge {
+          --badge-color: #1967d2;
+          display: inline-flex;
+          align-items: stretch;
+          height: 20px;
+          padding-right: 6px;
+          overflow: hidden;
+          border-radius: 3px;
+          background: linear-gradient(rgba(187, 187, 187, 0.1), rgba(0, 0, 0, 0.1)), var(--badge-color);
+          color: #fff;
+          font-family: Verdana, Geneva, "DejaVu Sans", sans-serif;
+          font-size: 11px;
+          font-weight: 400;
+          line-height: 20px;
+          white-space: nowrap;
+          text-shadow: 0 1px 0 rgba(1, 1, 1, 0.3);
+          cursor: pointer;
+          transition: filter 0.15s;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            margin-right: 6px;
+            background: linear-gradient(rgba(187, 187, 187, 0.1), rgba(0, 0, 0, 0.1)), beige;
+            color: var(--badge-color);
+            font-size: 12px;
+            text-shadow: none;
+
+            // Brand logos from Simple Icons, inlined from _includes/icons/
+            svg {
+              width: 14px;
+              height: 14px;
+            }
+          }
+
+          // Darken rather than lighten on hover so the white label text keeps its contrast
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: #fff;
+            text-decoration: none;
+            filter: brightness(0.88);
           }
         }
 
-        a.award.btn {
-          border-color: var(--global-highlight-color);
+        // Brand colours where there is one, distinct hues otherwise. Every colour keeps white 11px text
+        // at WCAG AA contrast (>= 4.5:1), so check new ones before adding them.
+        $pub-badge-colors: (
+          scholar: #1967d2,
+          arxiv: #b31b1b,
+          doi: #946006,
+          pdf: #e11d48,
+          html: #9a3412,
+          openreview: #8c1b13,
+          code: #24292f,
+          slides: #c2410c,
+          poster: #0f766e,
+          video: #7e22ce,
+          dataset: #15803d,
+          demo: #4338ca,
+          blog: #a21caf,
+          website: #0e7490,
+          supp: #6b635c,
+          abstract: #5d6b7e,
+          bib: #4b5563,
+          award: #b45309,
+        );
+
+        @each $kind, $color in $pub-badge-colors {
+          a.pub-badge--#{$kind} {
+            --badge-color: #{$color};
+          }
+        }
+
+        // GitHub's near-black disappears into the dark theme's background, so use GitHub's own dark-mode grey there
+        html[data-theme="dark"] & a.pub-badge--code {
+          --badge-color: #3d444d;
         }
       }
 
